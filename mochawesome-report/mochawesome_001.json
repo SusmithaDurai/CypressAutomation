@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-09-24T16:50:20.801Z",
+    "end": "2021-09-24T16:50:32.363Z",
+    "duration": 11562,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3e4033e4-2c2d-4095-9079-358fc7015a6e",
+      "title": "",
+      "fullFile": "cypress/integration/nextlogin.feature",
+      "file": "cypress/integration/nextlogin.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "99fd357f-8016-49ce-acd2-b5e50032d6d9",
+          "title": "Login Feature",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify User login successfull",
+              "fullTitle": "Login Feature Verify User login successfull",
+              "timedOut": null,
+              "duration": 5761,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.QuickLinks`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.QuickLinks`, but never found it.\n    at loginPage.clickMyAccountLink (https://katalon-demo-cura.herokuapp.com/__cypress/tests?p=cypress/integration/nextlogin.feature:152:10)\n    at Context.eval (https://katalon-demo-cura.herokuapp.com/__cypress/tests?p=cypress/integration/nextlogin.feature:52:10)\n    at Context.resolveAndRunStepDefinition (https://katalon-demo-cura.herokuapp.com/__cypress/tests?p=cypress/integration/nextlogin.feature:10561:29)\n    at Context.eval (https://katalon-demo-cura.herokuapp.com/__cypress/tests?p=cypress/integration/nextlogin.feature:9882:35)",
+                "diff": null
+              },
+              "uuid": "19c95fe7-4893-4d9a-8803-6334565898c3",
+              "parentUUID": "99fd357f-8016-49ce-acd2-b5e50032d6d9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "19c95fe7-4893-4d9a-8803-6334565898c3"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5761,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

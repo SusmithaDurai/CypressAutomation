@@ -1,0 +1,29 @@
+{
+  "name": "firstcypress",
+  "version": "1.0.0",
+  "description": "this is first cypress project",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^8.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.1",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "npm run clean:reports && cypress run",
+    "clean:reports":"rm -rf mochawesome-report/",
+    "merge:reports":"mochawesome-merge mochawesome-report/*.json > cypress-tests-report.json",
+    "create:html:report":"marge --reportDir TestReport cypress-tests-report.json",
+    "generate:html:report":"npm run merge:reports && npm run create:html:report"
+
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "author": "Susmitha",
+  "license": "ISC"
+}

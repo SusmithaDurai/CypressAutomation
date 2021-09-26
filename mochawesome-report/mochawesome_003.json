@@ -1,0 +1,142 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-26T16:30:40.276Z",
+    "end": "2021-09-26T16:31:02.328Z",
+    "duration": 22052,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5c9d7819-6041-486f-b476-00f6fd41e452",
+      "title": "",
+      "fullFile": "cypress/integration/curaAppointment.feature",
+      "file": "cypress/integration/curaAppointment.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9ad99d82-2ac3-4b5a-bdbd-5fa984d6d845",
+          "title": "Make an appointment",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify user should be able to redirect to login page",
+              "fullTitle": "Make an appointment Verify user should be able to redirect to login page",
+              "timedOut": null,
+              "duration": 3806,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "9586f6d6-4495-4653-bbc7-92b2f83b7aff",
+              "parentUUID": "9ad99d82-2ac3-4b5a-bdbd-5fa984d6d845",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify user should be able to login successfully",
+              "fullTitle": "Make an appointment Verify user should be able to login successfully",
+              "timedOut": null,
+              "duration": 2827,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "7c6683e8-ca65-49f3-a6b7-c490c61ae2ae",
+              "parentUUID": "9ad99d82-2ac3-4b5a-bdbd-5fa984d6d845",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify user should be able to make appointment",
+              "fullTitle": "Make an appointment Verify user should be able to make appointment",
+              "timedOut": null,
+              "duration": 4976,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "06ae6d0c-99b5-4f5f-ae35-ff348c0eadee",
+              "parentUUID": "9ad99d82-2ac3-4b5a-bdbd-5fa984d6d845",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9586f6d6-4495-4653-bbc7-92b2f83b7aff",
+            "7c6683e8-ca65-49f3-a6b7-c490c61ae2ae",
+            "06ae6d0c-99b5-4f5f-ae35-ff348c0eadee"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11609,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
